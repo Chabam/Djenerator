@@ -1,13 +1,12 @@
 import random
 
-phrase = input("Entrez une phrase (\"Tu prends t'es affaires et tu sors!\" par défaut) : ")
+phrase = input("Entrez une phrase (\"Tu prends tes affaires et tu sors!\" par défaut) : ")
 
 if phrase == "":
-	phrase = "Tu prends t'es affaires et tu sors!"
+	phrase = "Tu prends tes affaires et tu sors!"
 
 splitPhrase = phrase.split(" ")
-while(True):
-	random.shuffle(splitPhrase)
+random.shuffle(splitPhrase)
 
-	output = " ".join(splitPhrase)
-	print(output)
+output = " ".join(splitPhrase)
+print(output)
